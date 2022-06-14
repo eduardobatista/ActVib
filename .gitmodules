@@ -1,0 +1,3 @@
+[submodule "ActVibModules"]
+	path = ActVibModules
+	url = https://github.com/eduardobatista/ActVibModules.git
