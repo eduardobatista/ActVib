@@ -6,3 +6,4 @@ The ActVib Project comprises the following sub-projects:
 - ActVibFirmware: the firmware that runs on the ESP32.
 - ActVibSoftware: a supervisory software for the system as whole. 
 - A reference mechanical project for a structure that can be used for carrying out experiments with cantilever and fixed-ended beams.
+- ActVibModules: helpers to work with data acquired using the ActVib system.
