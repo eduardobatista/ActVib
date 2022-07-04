@@ -4,3 +4,6 @@
 [submodule "ActVibFirmware"]
 	path = ActVibFirmware
 	url = https://github.com/eduardobatista/ActVibFirmware.git
+[submodule "ActVibSoftware"]
+	path = ActVibSoftware
+	url = https://github.com/eduardobatista/ActVibSoftware
