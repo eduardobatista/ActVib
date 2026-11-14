@@ -7,3 +7,6 @@
 [submodule "ActVibSoftware"]
 	path = ActVibSoftware
 	url = https://github.com/eduardobatista/ActVibSoftware
+[submodule "ActVibSoftwareRS"]
+	path = ActVibSoftwareRS
+	url = https://github.com/eduardobatista/actvibsoftwarers

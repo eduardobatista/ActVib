@@ -16,6 +16,7 @@ versions.
 |---|---|---|
 | **ActVibFirmware** | Firmware for the ESP32 controller (Arduino). Handles sensor reading (MPU6050, LSM6DS3), ADCs (ADS1x15), DACs (MCP4725) and runs the real-time control algorithms. | [`ActVibFirmware/`](https://github.com/eduardobatista/ActVibFirmware) |
 | **ActVibSoftware** | Desktop supervisory application (Python/Qt) for monitoring, acquisition, path modeling, control and firmware updates. | [`ActVibSoftware/`](https://github.com/eduardobatista/ActVibSoftware) |
+| **ActVibSoftwareRS** | Rust port of ActVibSoftware, distributed as a single executable for Windows and Linux (no installation). Uses the same serial protocol and Feather/CSV file formats as the Python version. | [`ActVibSoftwareRS/`](https://github.com/eduardobatista/actvibsoftwarers) |
 | **ActVibModules** | Python helpers for working with data acquired by the system: DSP functions, filters, adaptive algorithms, signal generation and a cantilever beam model, with examples. | [`ActVibModules/`](https://github.com/eduardobatista/ActVibModules) |
 | **ActVib Board** | Custom PCB that connects the ESP32 board to DACs, ADCs, sensors, etc. | [OSHW Lab](https://oshwlab.com/dudubatista/ic-controle-ativo-de-vibra-es_copy) |
 | **Mechanical structure** | Reference mechanical project for a test rig used in experiments with cantilever and fixed-ended beams. | — |
@@ -42,6 +43,11 @@ Most users only need the desktop application. Installers for Windows and
 instructions for Linux are in the
 [ActVibSoftware README](ActVibSoftware/README.md) and on its
 [Releases page](https://github.com/eduardobatista/ActVibSoftware/releases).
+
+Alternatively, the Rust version (ActVibSoftwareRS) is available as a single
+executable for Windows and Linux, with no installation required. See the
+[ActVibSoftwareRS README](ActVibSoftwareRS/README.md) and its
+[Releases page](https://github.com/eduardobatista/actvibsoftwarers/releases/latest).
 
 ### Updating the firmware
 
@@ -70,7 +76,7 @@ latest commit of their tracked branches and record the new references:
 
 ```bash
 git submodule update --init --remote
-git add ActVibFirmware ActVibModules ActVibSoftware
+git add ActVibFirmware ActVibModules ActVibSoftware ActVibSoftwareRS
 git commit -m "Update submodules"
 ```
 
